@@ -1,0 +1,223 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+	width: 980px;
+	margin: 0 auto;
+}
+
+.top_line {
+	display: block;
+	border-bottom: 2px solid #291d11;
+	margin-bottom: 30px;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 36px;
+	text-align: center;
+	margin: 20px 0;
+	color: #291d11;
+}
+
+.dice {
+	display: flex;
+	justify-content: center;
+}
+
+/*-------------------------- dice border active (green color bg) --------------------------*/
+
+.dice_item {
+	position: relative;
+	height: 55px;
+	width: 55px;
+	border: 2px solid #291d11;
+	border-radius: 5px;
+	box-sizing: border-box;
+	margin: 0 15px;
+	transition: background-color 0.2s ease-in-out;
+}
+
+.dice_item::before {
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	border-radius: 5px;
+	z-index: 10;
+}
+
+.dice_active {
+	border: 2px solid #39e965;
+	color: #39e965;
+}
+
+.dice_item:hover {
+	background-color: #39e96542;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out;
+}
+
+.dice_six {
+	display: none;
+}
+
+/*--------------------------- dice points active (green color bg) -------------------------*/
+
+.dice_point {
+	display: block;
+	height: 12px;
+	width: 12px;
+	border-radius: 50%;
+	background-color: #291d11;
+	box-sizing: border-box;
+}
+
+.dice_point_active {
+	display: block;
+	height: 12px;
+	width: 12px;
+	border-radius: 50%;
+	background-color: #39e965;
+	box-sizing: border-box;
+}
+
+.dice_one_point {
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.dice_two_point {
+	display: inline-block;
+	margin-left: 7.5px;
+	margin-top: 20px;
+}
+
+.dice_three_point {
+	position: absolute;
+}
+
+.dice_three_point:nth-child(1) {
+	top: 5px;
+	left: 5px;
+}
+
+.dice_three_point:nth-child(2) {
+	top: 20px;
+	left: 20px;
+}
+
+.dice_three_point:nth-child(3) {
+	bottom: 5px;
+	right: 5px;
+}
+
+.dice_four_point {
+	position: absolute;
+}
+
+.dice_four_point:nth-child(1) {
+	top: 5px;
+	left: 5px;
+}
+
+.dice_four_point:nth-child(2) {
+	top: 5px;
+	right: 5px;
+}
+
+.dice_four_point:nth-child(3) {
+	bottom: 5px;
+	right: 5px;
+}
+
+.dice_four_point:nth-child(4) {
+	bottom: 5px;
+	left: 5px;
+}
+
+.dice_five_point {
+	position: absolute;
+}
+
+.dice_five_point:nth-child(1) {
+	top: 5px;
+	left: 5px;
+}
+
+.dice_five_point:nth-child(2) {
+	top: 5px;
+	right: 5px;
+}
+
+.dice_five_point:nth-child(3) {
+	bottom: 5px;
+	right: 5px;
+}
+
+.dice_five_point:nth-child(4) {
+	bottom: 5px;
+	left: 5px;
+}
+
+.dice_five_point:nth-child(5) {
+	top: 20px;
+	left: 20px;
+}
+
+.dice_six_point {
+	position: absolute;
+}
+
+.dice_six_point:nth-child(1) {
+	top: 5px;
+	left: 5px;
+}
+
+.dice_six_point:nth-child(2) {
+	top: 5px;
+	left: 20px;
+}
+
+.dice_six_point:nth-child(3) {
+	top: 5px;
+	right: 5px;
+}
+
+.dice_six_point:nth-child(4) {
+	bottom: 5px;
+	right: 5px;
+}
+
+.dice_six_point:nth-child(5) {
+	bottom: 5px;
+	left: 20px;
+}
+
+.dice_six_point:nth-child(6) {
+	bottom: 5px;
+	left: 5px;
+}
+
+.throw_dice {
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+}
+
+/* ------------------------------- */
+
+.player_one,
+.player_two {
+	margin: 15px 0;
+	display: block;
+	text-align: center;
+}
+
+.Off {
+	display: none;
+}
