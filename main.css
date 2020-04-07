@@ -207,6 +207,19 @@ h1 {
 	display: block;
 	margin: 20px auto;
 	text-align: center;
+	width: 240px;
+	height: 40px;
+	outline: none;
+	background-color: #39e965;
+	color: #291d11;
+	border: none;
+	font-weight: 700;
+	text-transform: uppercase;
+	border-radius: 5px;
+}
+
+.throw_dice:hover {
+	background-color: #62ee85;
 }
 
 /* ------------------------------- */
